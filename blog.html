@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- DaisyUI and TailwindCSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        .font {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+    <title>Blogs</title>
+</head>
+<body class="font body bg-blue-50 py-4 min-h-screen">
+
+    <!-- Navbar start -->
+    <header class="max-w-7xl mx-auto shadow-sm">
+        <nav>
+            <div class="navbar bg-white rounded-3xl p-4">
+                <div class="navbar-start gap-2 items-end">
+                    <img src="assets/logo.png" alt="Logo">
+                    <a class="text-4xl font-semibold"><span class="font-light">Dev</span>Board</a>
+                </div>
+                <div class="navbar-end gap-x-9">
+                    <button id="desk" class="cursor-pointer flex items-center bg-blue-600 py-4 px-5 font-semibold text-xl text-white rounded-lg">
+                        Back to Desk
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Navbar end -->
+
+    <h1 class="text-center m-5 text-4xl font-bold">Blogs</h1>
+
+    <div class="max-w-7xl mx-auto space-y-4">
+        <!-- Question 1 -->
+        <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" checked />
+            <div class="collapse-title font-semibold">Question 1: What are the different ways to select an element in the DOM?</div>
+            <div class="collapse-content text-sm">
+                getElementById → selects a single element<br>
+                getElementsByClassName, getElementsByTagName, getElementsByName → select multiple elements (HTMLCollection/NodeList)<br>
+                querySelector → selects the first matching element<br>
+                querySelectorAll → selects all matching elements (NodeList)
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title font-semibold">Question 2: What is the difference between innerHTML, innerText, and textContent?</div>
+            <div class="collapse-content text-sm">
+                innerHTML → gets/sets content including HTML tags<br>
+                innerText → gets/sets only visible text<br>
+                textContent → gets/sets all text, ignoring HTML tags
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title font-semibold">Question 3: What is event delegation in the DOM?</div>
+            <div class="collapse-content text-sm">
+                Event delegation is a technique where a single listener is added to a parent element instead of adding listeners to multiple child elements. The parent handles events that bubble up from its children.
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title font-semibold">Question 4: What is event bubbling in the DOM?</div>
+            <div class="collapse-content text-sm">
+                Event bubbling is a process where an event starts from the deepest target element and propagates up to its parent elements.
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title font-semibold">Question 5: How do you create, add, and remove elements using JavaScript?</div>
+            <div class="collapse-content text-sm">
+                <!-- Answer explanation -->
+                // 1. Create element<br>
+                const div = document.createElement('div');<br>
+                div.textContent = "Hello";<br><br>
+                // 2. Add element to DOM<br>
+                document.body.appendChild(div); // or append()<br><br>
+                // 3. Remove element<br>
+                div.remove(); // or parent.removeChild(div)
+            </div>
+        </div>
+    </div>
+
+    <script src="blogs.js"></script>
+</body>
+</html>
