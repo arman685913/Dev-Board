@@ -27,9 +27,11 @@
                     <a class="text-4xl font-semibold"><span class="font-light">Dev</span>Board</a>
                 </div>
                 <div class="navbar-end gap-x-9">
-                    <button id="completedTask" class="flex items-center bg-blue-50 py-3 px-4 font-semibold text-3xl gap-2 rounded-full">
+                    <button  class="flex items-center bg-blue-50 py-3 px-4 font-semibold text-3xl gap-2 rounded-full">
                         <img src="assets/checkbox.png" alt="">
-                        23
+                        <span id="completedTask">
+                            23
+                        </span>
                     </button>
                     <button id="themeBtn" class="cursor-pointer p-3 bg-blue-50 rounded-full">
                         <img src="assets/theme-btn.png" alt="">
@@ -43,9 +45,9 @@
     <!-- main part-->
     <main class="grid grid-flow-col max-w-7xl mx-auto pb-10 mt-5 gap-5 ">
         <!-- main section -->
-        <div class="col-span-3 p-4 pb-6 bg-white rounded-2xl shadow-sm">
+        <div class="col-span-3 p-4 pb-7 bg-white rounded-2xl shadow-sm">
             <!-- main head -->
-            <div class="grid grid-flow-col gap-3 border-b border-dashed border-gray-300 pb-8">
+            <div class="grid grid-flow-col gap-4 border-b border-dashed border-gray-300 pb-8">
                 <div class="bg-blue-50 rounded-xl p-6 flex items-center gap-3">
                     <div class="bg-white p-5 rounded-full">
                         <img src="assets/checkbox.png" alt="">
@@ -54,18 +56,18 @@
                         <p>
                         Task Assigned
                         </p>
-                        <h1 class="text-3xl font-semibold">
+                        <h1 id="task" class="text-3xl font-semibold">
                         6
                     </h1>
                     </div>
                 </div>
-                <div id="blogs" class="cursor-pointer col-span-2 bg-gradient-to-r from-blue-600 to-blue-200 flex items-center gap-3 rounded-xl pl-8">
+                <div id="blogs" class="cursor-pointer col-span-2 bg-gradient-to-r from-blue-600 to-blue-200 flex items-center gap-3 rounded-xl p-6 pl-8 ">
                     <div>
                         <img class="w-[95%]" src="assets/board.png" alt="">
                     </div>
                     <div>
                         <p class="text-white text-2xl">
-                            Discover Something New Today!
+                            Discover Something <br> New Today!
                         </p>
                     </div>
                 </div>
@@ -80,7 +82,7 @@
             </div>
             <!-- main head end -->
             <!-- card part -->
-            <div class="grid gap-3 grid-cols-3 mt-5">
+            <div class="grid gap-4 grid-cols-3 mt-6">
                 <!-- card 1 -->
                 <div class="bg-blue-50 rounded-xl p-4 pr-0">
                     <div class="bg-white rounded-xl w-1/2 text-center p-2 ">
@@ -219,8 +221,8 @@
         <!-- main section end-->
         
         <!-- History part start-->
-        <div class="bg-white rounded-2xl p-4 shadow-sm">
-            <div class="border-b border-dashed border-gray-300">
+        <div class="bg-white rounded-2xl p-4 pb-0 shadow-sm">
+            <div class="border-b-2 border-dashed border-gray-300">
                 <div class="text-center flex gap-2 mx-5 justify-center items-center">
                     <img src="assets/activity.png" alt="">
                     <h1 class="text-3xl">
